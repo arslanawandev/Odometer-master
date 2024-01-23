@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#364B71"
+    tools:context="mdsadabwasimcom.odometer.MainActivity">
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="wrap_content"
+        android:layout_height="240dp"
+        android:contentDescription="@string/main_image"
+        android:src="@drawable/run" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:fontFamily="serif-monospace"
+        android:text="@string/just_do_it"
+        android:textColor="#61B8B2"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/distanceView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#57C785"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/stopbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/startbtn"
+        android:layout_marginEnd="41dp"
+        android:background="#364B71"
+        android:fontFamily="serif-monospace"
+
+        android:text="@string/stop"
+        android:textColor="#F02E59"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/resetbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp"
+        android:background="#364B71"
+        android:fontFamily="serif-monospace"
+
+        android:text="@string/reset"
+        android:textColor="#E27234"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/startbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/distanceView"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="31dp"
+        android:background="#364B71"
+        android:fontFamily="serif-monospace"
+        android:text="@string/start1"
+        android:textColor="#329751"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="13dp"
+        app:srcCompat="@android:drawable/checkbox_on_background"
+        android:layout_alignBottom="@+id/text1" />
+
+</RelativeLayout>

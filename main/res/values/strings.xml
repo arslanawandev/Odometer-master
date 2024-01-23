@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Odometer</string>
+    <string name="just_do_it">JUST DO IT!</string>
+    <string name="stop">Stop</string>
+    <string name="start">Start</string>
+    <string name="reset">Reset</string>
+    <string name="main_image">main_image</string>
+    <string name="start1">START</string>
+</resources>
